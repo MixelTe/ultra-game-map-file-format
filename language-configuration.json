@@ -1,0 +1,12 @@
+{
+  "folding": {
+    "markers": {
+      "start": "^\\w*:",
+      "end": ";"
+    }
+  },
+  "indentationRules": {
+    "increaseIndentPattern": ":",
+    "decreaseIndentPattern": ";"
+  },
+}

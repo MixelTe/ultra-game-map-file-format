@@ -1,0 +1,25 @@
+{
+  "name": "ultra-game-map-file-format",
+  "displayName": "ultra_game_map File Format",
+  "description": "Syntax highlighting for ultra_game_map File Format",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ultra_game_map",
+      "aliases": ["Ultra Game Map", "ultra_game_map"],
+      "extensions": [".ultra_game_map"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ultra_game_map",
+      "scopeName": "source.ultra_game_map",
+      "path": "./syntaxes/ultra_game_map.tmLanguage.json"
+    }]
+  }
+}

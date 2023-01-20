@@ -1,0 +1,42 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Ultra Game Map",
+	"patterns": [
+		{
+			"include": "#keywords"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"match": "(^[\\w -]*)(:)",
+					"captures": {
+						"1": {
+							"name": "variable.ultra_game_map"
+						},
+						"2": {
+							"name": "support.type.ultra_game_map"
+						}
+					}
+				},
+				{
+					"match": "(^[\\w -]*)(=)",
+					"captures": {
+						"1": {
+							"name": "variable.other.constant.ultra_game_map"
+						},
+						"2": {
+							"name": "support.type.ultra_game_map"
+						}
+					}
+				},
+				{
+					"name": "markup.bold.ultra_game_map",
+					"match": ";"
+				}
+			]
+		}
+	},
+	"scopeName": "source.ultra_game_map"
+}
