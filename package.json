@@ -2,7 +2,13 @@
   "name": "ultra-game-map-file-format",
   "displayName": "ultra_game_map File Format",
   "description": "Syntax highlighting for ultra_game_map File Format",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "publisher": "MixelTe",
+  "icon": "images/icon.png",
+  "repository": {
+    "url": "https://github.com/MixelTe/ultra-game-map-file-format",
+    "type": "git"
+  },
   "engines": {
     "vscode": "^1.74.0"
   },
@@ -14,7 +20,11 @@
       "id": "ultra_game_map",
       "aliases": ["Ultra Game Map", "ultra_game_map"],
       "extensions": [".ultra_game_map"],
-      "configuration": "./language-configuration.json"
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./images/icon_small.png",
+        "dark": "./images/icon_small.png"
+      }
     }],
     "grammars": [{
       "language": "ultra_game_map",
