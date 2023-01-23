@@ -10,30 +10,48 @@
 		"keywords": {
 			"patterns": [
 				{
-					"match": "(^[\\w -]*)(:)",
+					"match": "(^[\\w\\t \\-]*)(\\((?:[\\w\\t \\-\\[\\]]*)\\))?[\\t ]*(:)",
 					"captures": {
 						"1": {
 							"name": "variable.ultra_game_map"
 						},
 						"2": {
+							"patterns": [
+								{
+									"name": "entity.name.type.ultra_game_map",
+									"match": "\\w+"
+								}
+							]
+						},
+						"3": {
 							"name": "support.type.ultra_game_map"
 						}
 					}
 				},
 				{
-					"match": "(^[\\w -]*)(=)",
+					"match": "(^[\\w\\t \\-]*)(\\((?:[\\w\\t \\-\\[\\]]*)\\))?[\\t ]*(=)",
 					"captures": {
 						"1": {
 							"name": "variable.other.constant.ultra_game_map"
 						},
 						"2": {
+							"patterns": [
+								{
+									"name": "entity.name.type.ultra_game_map",
+									"match": "\\w+"
+								}
+							]
+						},
+						"3": {
 							"name": "support.type.ultra_game_map"
 						}
 					}
 				},
 				{
-					"name": "markup.bold.ultra_game_map",
-					"match": ";"
+					"name": "string.quoted.double.ultra_game_map",
+					"match": "[^;^:]*",
+					"begin": ":|=",
+					"end": ";"
 				}
 			]
 		}
